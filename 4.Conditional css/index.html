@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.css"></link>
+    <script src="https://cdn.jsdelivr.net/npm/vue@next"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Vue Conditional CSS</h1>
+    </header>
+    <section id="app">
+      <h2>CSS in Action</h2>
+      <hr />
+      <h3 class="color-title" :class="{'color-title-with-border': background === 'white' ? true : false}" :style="{background: background}">{{background}}</h3>
+      <div class="css-boxes-container">
+        <div :style="{pointerEvents: background === 'white' ? 'none' : 'all'}" @click="colorBoxClickHandler('white')"></div>
+        <div style="background: #7FFFD4;" @click="colorBoxClickHandler('#7FFFD4')"></div>
+        <div style="background: #8A2BE2;" @click="colorBoxClickHandler('#8A2BE2')"></div>
+        <div style="background: #FF7F50;" @click="colorBoxClickHandler('#FF7F50')"></div>
+        <div style="background: #6495ED;" @click="colorBoxClickHandler('#6495ED')"></div>
+        <div style="background: #008080;" @click="colorBoxClickHandler('#008080')"></div>
+        <div style="background: #9ACD32;" @click="colorBoxClickHandler('#9ACD32')"></div>
+        <div style="background: #F4A460;" @click="colorBoxClickHandler('#F4A460')"></div>
+        <div style="background: #B0E0E6;" @click="colorBoxClickHandler('#B0E0E6')"></div>
+        <div style="background: salmon" @click="colorBoxClickHandler('salmon')"></div>
+        <div style="background: lightseagreen" @click="colorBoxClickHandler('lightseagreen')"></div>
+        <div style="background: lightyellow" @click="colorBoxClickHandler('lightyellow')"></div>
+      </div>
+      <button @click="background = 'white'">Reset</button>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

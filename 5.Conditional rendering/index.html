@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.css"></link>
+    <script src="https://cdn.jsdelivr.net/npm/vue@next"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Vue Course Goals</h1>
+    </header>
+    <section id="app">
+      <h2>Conditional Rendering</h2>
+      <hr />
+      <div class="input-container">
+        <input v-model="currentInput" placeholder="Enter your goal"/>
+        <button @click="addButtonClickHandler">Add</button>
+      </div>
+      <!-- <p v-show="goals.length === 10">You're going too fast now... </p> -->
+      <p v-if="goals.length === 0">No goal has been added.</p>
+      <!-- <p v-else-if="goals.length === 10">Woh!!! That's disastrous </p> -->
+      <div class="goals-list-container" v-else>
+        <ul>
+          <li v-for="(goal, index) in goals" :key="goal" @click="removeGoalHandler(index)">{{goal}}</li>
+        </ul>
+      </div>
+      <!-- <div class="goals-list-container">
+        <ul><li v-for="(value, key, index) of {name: 'Shantanu', age: 27}">{{key}}: {{value}}</li></ul>
+      </div> -->
+      <!-- <div class="goals-list-container">
+        <ul><li v-for="(number, index) in 10">{{number}} - {{index}}</li></ul>
+      </div> -->
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

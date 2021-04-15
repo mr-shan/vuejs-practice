@@ -1,0 +1,13 @@
+:root {
+    --primary-bg-color: "#f0f0f0";
+    
+    --accent-primary-color: "#42b983";
+    --accent-secondary-color: "#5773d8";
+    --accent-ternary-color: "#fb6868";
+
+    --light-shadow: "#fff";
+    --dark-shadow: "#ccc";
+
+    --text-primary: "#333";
+    --text-primary: "#fff";
+}

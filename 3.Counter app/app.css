@@ -1,0 +1,107 @@
+body {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1.5rem;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    background: #42b983;
+    border-radius: 16px;
+    padding: 8px;
+    color: white;
+    box-shadow: 0px 0px 5px 0px #666;
+}
+
+#app, #app2 {
+    box-shadow: 0px 0px 10px 2px #ccc;
+    border-radius: 16px;
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+}
+
+#app h2, #app2 h2 {
+    color: #42b983;
+    font-weight: bold;
+}
+
+#app hr, #app2 hr {
+    border: none;
+    border: solid 2px #ccc;
+    border-radius: 16px;
+}
+
+#app p, , #app2 p {
+    background: #42b983;
+    border-radius: 16px;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    margin-top: 22px;
+    font-size: 18px;
+}
+
+#app p a, #app2 p a {
+    color: purple;
+}
+
+#app .buttons-countainer {
+    padding-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app .buttons-countainer button {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    background: rgb(109, 109, 109);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    margin: 0px 12px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.25s ease-out;
+}
+
+#app .buttons-countainer button:hover {
+    background: rgb(148, 148, 148);
+}
+
+#app .counter-value-set-wrapper, #app2 .counter-value-set-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: #666;
+    font-weight: bold;
+}
+
+#app .counter-value-set-wrapper input, #app2 .counter-value-set-wrapper input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    border-bottom: solid 1px #42b983;
+    margin-left: 10px;
+    font-size: 16px;
+    padding: 5px;
+    outline: none;
+}
+
+#app2 .counter-value-set-wrapper input {
+    width: 50%;
+    text-align: left;
+}
+
+#app2 p {
+    text-align: left;
+    padding-left: 20px;
+    font-weight: bold;
+    color: #666;
+}

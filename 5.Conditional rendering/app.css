@@ -1,0 +1,93 @@
+body {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1.5rem;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    background: #42b983;
+    border-radius: 16px;
+    padding: 8px;
+    color: white;
+    box-shadow: 0px 0px 5px 0px #666;
+}
+
+#app {
+    box-shadow: 0px 0px 10px 2px #ccc;
+    border-radius: 16px;
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+}
+
+#app h2 {
+    color: #42b983;
+    font-weight: bold;
+}
+
+#app hr {
+    border: none;
+    border: solid 2px #ccc;
+    border-radius: 16px;
+}
+
+#app .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+#app .input-container input {
+    width: 65%;
+    padding: 16px 22px;
+    border-radius: 30px;
+    outline: none;
+    border: solid 1px #ccc;
+    font-size: 16px;
+    transition: all 0.2s ease-out;
+}
+
+#app .input-container input:focus {
+    border-color: #666;
+}
+
+#app .input-container button {
+    width: 20%;
+    padding: 16px 12px;
+    outline: none;
+    background: #c7396e;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#app .input-container button:hover {
+    background: #39a173;
+}
+
+.goals-list-container {
+    padding: 12px 0;
+}
+
+.goals-list-container ul {
+    padding: 00;
+    list-style: none;
+}
+
+.goals-list-container ul li {
+    background: #42b983;
+    padding: 14px;
+    margin-bottom: 20px;
+    color: #111;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 25px;
+}
